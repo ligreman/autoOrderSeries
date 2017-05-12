@@ -1,0 +1,23 @@
+{
+    "name": "AOS",
+    "description": "autoOrderSeries",
+    "version": "2.0.0",
+    "engines": {
+        "node": ">= 0.6.0",
+        "npm": ">= 1.0.0"
+    },
+    "dependencies": {
+        "cheerio": "*",
+        "parse-torrent": "^5.4.0",
+        "q": "^1.2.0",
+        "request": "*"
+    },
+    "devDependencies": {       
+    },
+    "bundleDependencies": [],
+    "private": true,
+    "main": "app.js",
+    "scripts": {
+        "start": "node autoOrderSeries.js"
+    }    
+}
