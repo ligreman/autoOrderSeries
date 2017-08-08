@@ -362,7 +362,7 @@ function decompressZip(comprimido, torrentFile) {
 
             logger("   > Descomprimo: " + comprimido.file);
             //Descomprimo
-            exec('7z x -y -o"' + dir + '" -p' + pass + ' "' + dir + comprimido.file + '"', function (error, stdout, stderr) {
+            exec('7z x -y -o"' + dir + '" -p"' + pass + '" "' + dir + comprimido.file + '"', function (error, stdout, stderr) {
                 if (error) {
                     logger(error);
                 } else {
