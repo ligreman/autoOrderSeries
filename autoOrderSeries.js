@@ -471,6 +471,9 @@ function deleteFolderRecursive(path) {
 function moveVideosAndEnd(videos, torrentFile) {
     //Cojo los ficheros de video uno a uno y los muevo
     videos.forEach(function (fichero) {
+		fichero.folder = fichero.folder.trim();
+		fichero.name = fichero.name.trim();
+
         //Si la carpeta y fichero origen existen
         logger("   > Miro a ver si existe: " + pathTorrents + fichero.folder + fichero.file);
 
